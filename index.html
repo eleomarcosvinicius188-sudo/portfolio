@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Profissional | Engenharia de Software & BJJ</title>
+    <link rel="stylesheet" href="porti.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="logo">🥋 Marquinhos<span class="highlight">bjj</span></div>
+        <button class="menu-hamburger" aria-label="Abrir menu de navegação" aria-expanded="false">☰</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Perfil</a></li>
+                <li><a href="#habilidades">Arsenal Técnico</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INÍCIO (HERO SECTION) -->
+        <section id="inicio" class="section-hero">
+            <div class="hero-content">
+                <h1 id="saudacao">Oss!</h1>
+                <p class="subtitle">Desenvolvedor de Software & Praticante de Jiu-Jitsu</p>
+                <p>
+                    Sou Eleomarcos, conhecido como Marquinhos, e estou construindo minha trajetória em duas áreas que exigem dedicação, disciplina e evolução constante: a tecnologia e o Jiu-Jitsu.
+Na informática, estou desenvolvendo meus conhecimentos em programação, explorando ferramentas, linguagens e conceitos que me ajudam a transformar ideias em projetos. No Jiu-Jitsu, aprendo técnicas, estratégias e valores como respeito, humildade, persistência e autocontrole.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn">Ver Projetos</a>
+                    <a href="#contato" class="btn btn-second0ary">Chamar no WhatsApp</a>
+                </div>
+            </div>
+            
+            <!-- ESPAÇO PARA SUA FOTO -->
+            <div class="hero-image">
+                <div class="avatar-container">
+                    <!-- Substitua 'minha-foto.jpg' pela sua foto real na pasta img/ -->
+                    <img
+                     src="image.png"
+                     class="avatar"
+                     alt="foto de perfil Marquinhos"
+                     >
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE MIM -->
+        <section id="sobre">
+            <h2>Minha Linhagem (Perfil)</h2>
+            <div class="sobre-container">
+                <p>
+                    Meu nome é Eleomarcos, conhecido como Marquinhos, e o Jiu-Jitsu faz parte da minha jornada de aprendizado, disciplina e superação. Vejo esse esporte como muito mais do que uma luta: é uma forma de desenvolver o respeito, a humildade, o foco e a força de vontade.
+                </p>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="habilidades">
+            <h2>Arsenal Técnico</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML (em aprendizado)</div>
+                <div class="skill-card">CSS (em aprendizado)</div>
+                <div class="skill-card">JavaScript (em aprendizado)</div>
+                <div class="skill-card">Git & GitHub (em aprendizado)</div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="projetos">
+            <h2>Projetos em Destaque</h2>
+            <div class="projects-container">
+                <article class="project-card">
+                    <h3>HTML(O HTML foi uma das primeiras tecnologias que estudei na escola.)</h3>
+                    <p>Com ele, aprendi como estruturar páginas web, organizar conteúdos e inserir elementos como títulos, parágrafos, imagens, links e listas.</p>
+                    <a href="#" target="_blank" class="project-link"></a>
+                </article>
+                <article class="project-card">
+                    <h3>CSS(estilização e design)</h3>
+                    <p>Com o CSS, aprendi como personalizar a aparência das páginas criadas com HTML.</p>
+                    <a href="#" target="_blank" class="project-link"></a>
+                </article>
+                <article class="project-card">
+                    <h3>JavaScript(Interatividade e Funcionalidade)</h3>
+                    <p>O JavaScript me apresentou a parte lógica e interativa do desenvolvimento web. Com ele, comecei a estudar como adicionar funcionalidades às páginas, responder às ações dos usuários e modificar elementos de um site dinamicamente.</p>
+                    <a href="#" target="_blank" class="project-link"></a>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato">
+            <h2>Agende um Treino (Contato)</h2>
+            <div class="contato-wrapper">
+                
+                <!-- Canais Diretos de Comunicação -->
+                <div class="contato-info">
+                    <h3>Canais Diretos</h3>
+                    <p>Sinta-se à vontade para entrar em contato diretamente através das redes:</p>
+                    <ul class="info-list">
+                        <li>📱 <strong>Telefone/WhatsApp:</strong> <a href="https://wa.me" target="_blank">(84) 98729-1437</a></li>
+                        <li>📸 <strong>Instagram:</strong> <a href="https://instagram.com" target="_blank">@marquinhosbjj1</a></li>
+                    </ul>
+                </div>
+
+                <!-- Formulário Exigido -->
+                <form id="form-contato" novalidate>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" required minlength="3" placeholder="Seu nome ou empresa">
+                        <span class="error-msg" id="error-nome"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail Corporativo:</label>
+                        <input type="email" id="email" required placeholder="nome@empresa.com">
+                        <span class="error-msg" id="error-email"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone_form">Telefone de Contato:</label>
+                        <input type="tel" id="telefone_form" required placeholder="(84) 98729-1437">
+                        <span class="error-msg" id="error-telefone-form"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem / Proposta:</label>
+                        <textarea id="mensagem" required placeholder="Descreva aqui o escopo do projeto ou vaga de estágio..."></textarea>
+                        <span class="error-msg" id="error-mensagem"></span>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="consentimento" required>
+                        <label for="consentimento">Confirmo e autorizo o uso comercial desses dados para contato profissional.</label>
+                        <span class="error-msg" id="error-consentimento"></span>
+                    </div>
+                    <button type="submit">Enviar Mensagem Profissional</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; <span id="ano-atual"></span> - Desenvolvido por Eleomarcos Vinicius. Todos os direitos reservados. Oss.</p>
+        <a href="#inicio" class="back-to-top" aria-label="Voltar para o início">▲ Topo</a>
+    </footer>
+
+    <script src="javas.js"></script>
+</body>
+</html>
